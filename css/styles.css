@@ -1,7 +1,8 @@
 :root {
+    --default-font: 'Roboto', sans-serif;
     --main-font:'Poppins',sans-serif;
-    --default-font:'Roboto',sans-serif;
     --accent-font:'Playfair Display',serif;
+    --branding-color: #9A3762;
 }
     
 body {
@@ -13,6 +14,14 @@ body {
 h1 {
     font-family: var(--accent-font);
     font-weight: bold;
+}
+
+.navbar-brand {
+    font-family: var(--accent-font);
+    font-weight: bold;
+    background: url("../image/logo.png") no-repeat;
+    padding-left: 45px;
+    background-position: left center;
 }
 
 .hero p {
@@ -29,7 +38,7 @@ h1 {
 }
 
 .hero-button {
-    background-color: #9A3762;
+    background-color: var(--branding-color);
     border: none;
     font-size: 15px;
     font-weight: bold;
