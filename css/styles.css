@@ -1,4 +1,40 @@
+:root {
+    --main-font:'Poppins',sans-serif;
+    --default-font:'Roboto',sans-serif;
+    --accent-font:'Playfair Display',serif;
+}
+    
 body {
-    background-color: coral;
-    font-family: 'Poppins', sans-serif;
+    background-color: #F9F7FE;
+    font-family: var(--main-font);
+    margin-top: 130px;
+}
+
+h1 {
+    font-family: var(--accent-font);
+    font-weight: bold;
+}
+
+.hero p {
+    font-size: 36px;
+}
+
+.hero h1 {
+    font-size: 80px;
+    padding-bottom: 20px;
+}
+
+.hero h2 {
+    font-size: 26px;
+}
+
+.hero-button {
+    background-color: #9A3762;
+    border: none;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 7px;
+    color: white;
+    padding: 20px 30px;
+    margin-top: 40px;
 }
