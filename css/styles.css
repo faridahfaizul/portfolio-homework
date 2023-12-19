@@ -2,13 +2,21 @@
     --default-font: 'Roboto', sans-serif;
     --main-font:'Poppins',sans-serif;
     --accent-font:'Playfair Display',serif;
+    --default-color:#F9F7FE;
     --branding-color: #9A3762;
+}
+
+@media (max-width: 600px) {
+    body {
+        margin: 0 20px;
+    }
 }
     
 body {
-    background-color: #F9F7FE;
+    background-color: var(--default-color);
     font-family: var(--main-font);
     margin-top: 130px;
+    margin-bottom: 30px;
 }
 
 h1 {
@@ -39,11 +47,43 @@ h1 {
 
 .hero-button {
     background-color: var(--branding-color);
-    border: none;
+    border: solid 1px var(--branding-color);
     font-size: 15px;
     font-weight: bold;
     border-radius: 7px;
-    color: white;
+    color: var(--default-color);
     padding: 20px 30px;
     margin-top: 40px;
+}
+
+.hero-button:hover {
+    background-color: var(--default-color);
+    border: solid 1px var(--branding-color);
+    color: var(--branding-color);
+}
+
+.second-button {
+    background-color: var(--default-color);
+    border: solid 1px var(--branding-color);
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 7px;
+    color: var(--branding-color);
+    padding: 20px 30px;
+    margin-top: 40px;
+    text-decoration: none;
+}
+
+.second-button:hover {
+    background-color: var(--branding-color);
+    border: none;
+    color: var(--default-color);
+}
+
+.introduction {
+    margin-top: 100px;
+}
+
+.introduction p {
+    font-size: 25px;
 }
