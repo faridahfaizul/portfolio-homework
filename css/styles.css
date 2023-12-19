@@ -6,16 +6,12 @@
     --branding-color: #9A3762;
 }
 
-@media (max-width: 600px) {
-    body {
-        margin: 0 20px;
-    }
-}
+
     
 body {
     background-color: var(--default-color);
     font-family: var(--main-font);
-    margin-top: 130px;
+    margin-top: 160px;
     margin-bottom: 30px;
 }
 
@@ -86,4 +82,10 @@ h1 {
 
 .introduction p {
     font-size: 25px;
+}
+
+@media (max-width: 576px) {
+    body {
+        margin: 100px 20px;
+    }
 }
