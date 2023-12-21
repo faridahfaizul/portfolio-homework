@@ -8,7 +8,7 @@
 
 body {
     font-family: var(--main-font);
-    background-color: var(--default-color);
+    background-color: var(--default-color);margin-bottom: 30px;
 }
 
 h1 {
@@ -26,7 +26,6 @@ h1 {
 
 .hero-section {
     margin-top: 160px;
-    margin-bottom: 30px;
 }
 
 .hero p {
@@ -90,12 +89,12 @@ h1 {
         margin: 100px 20px;
     }
 
-    .about-section {
+    .content-section {
         margin: 100px 20px;
     }
 }
 
-.about-section {
+.content-section {
     margin-top: 70px;
 }
 
@@ -106,4 +105,12 @@ h1 {
 
 .about h3 {
     font-size: 20px;
+}
+
+.worktop {
+    margin: 120px 0 50px 300px;
+}
+
+.work p {
+    color: #6c757d;
 }
