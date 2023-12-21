@@ -6,13 +6,9 @@
     --branding-color: #9A3762;
 }
 
-
-    
 body {
-    background-color: var(--default-color);
     font-family: var(--main-font);
-    margin-top: 160px;
-    margin-bottom: 30px;
+    background-color: var(--default-color);
 }
 
 h1 {
@@ -26,6 +22,11 @@ h1 {
     background: url("../image/logo.png") no-repeat;
     padding-left: 45px;
     background-position: left center;
+}
+
+.hero-section {
+    margin-top: 160px;
+    margin-bottom: 30px;
 }
 
 .hero p {
@@ -85,7 +86,24 @@ h1 {
 }
 
 @media (max-width: 576px) {
-    body {
+    .hero-section {
         margin: 100px 20px;
     }
+
+    .about-section {
+        margin: 100px 20px;
+    }
+}
+
+.about-section {
+    margin-top: 70px;
+}
+
+.about-me {
+    margin: 0 auto;
+    display: block;
+}
+
+.about h3 {
+    font-size: 20px;
 }
