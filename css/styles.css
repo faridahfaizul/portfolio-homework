@@ -81,6 +81,9 @@ h1 {
     margin-top: 70px;
 }
 
+.abouttop {
+    margin: 110px 0 16px 0;
+}
 .about-me {
     margin: 0 auto;
     display: block;
@@ -170,8 +173,8 @@ nav li a.active {
         margin: 100px 20px 30px 20px;
     }
 
-    .about {
-        margin-top: -48px;
+    .abouttop {
+        margin-top: 0;
     }
 
     .worktop {
