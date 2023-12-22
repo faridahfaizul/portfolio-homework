@@ -3,13 +3,13 @@
     --main-font:'Poppins',sans-serif;
     --accent-font:'Playfair Display',serif;
     --default-color:#F9F7FE;
+    --head-foot-color: #bdbdbd;
     --branding-color: #9A3762;
 }
 
 body {
     font-family: var(--main-font);
     background-color: var(--default-color);
-    margin-bottom: 30px;
 }
 
 h1 {
@@ -17,8 +17,78 @@ h1 {
     font-weight: bold;
 }
 
+nav {
+    padding: 10px 0;
+    background-color: var(--default-color);
+    font-size: 15px;
+}
+
+nav ul {
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    display: inline;
+    list-style: none;
+    line-height: 42px;
+    margin-left: 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #272142;
+    transition: all 100ms ease-in-out;
+}
+
+nav a:hover {
+    color: var(--branding-color);
+}
+
+nav li a.active {
+    color: var(--branding-color);
+    font-weight: bold;
+}
+
+footer a {
+    color: var(--branding-color);
+    text-decoration: none;
+    font-size: 20px;
+}
+
+footer a:hover {
+    color: var(--branding-color);
+    text-decoration: underline;
+    font-weight: bold;
+    transition: all 100ms ease-in-out;
+}
+
+footer .links {
+    margin: 30px 0;
+}
+
+footer .links a {
+    margin-left: 15px;
+    font-size: 20px;
+    color: var(--branding-color);
+    padding: 10px 14px;
+    border-radius: 7px;
+    font-size: 18px;
+}
+
+footer .links a:hover {
+    margin-left: 15px;
+    color: var(--default-color);
+    background: var(--branding-color);
+    padding: 10px 14px;
+    border-radius: 7px;
+    font-size: 18px;
+    transition: all 100ms ease-in-out;
+}
+
 .hero-section {
     margin-top: 160px;
+    margin-bottom: 30px;
 }
 
 .hero p {
@@ -43,12 +113,22 @@ h1 {
     color: var(--default-color);
     padding: 20px 30px;
     margin-top: 40px;
+    text-decoration: none;
 }
 
 .hero-button:hover {
     background-color: var(--default-color);
     border: solid 1px var(--branding-color);
     color: var(--branding-color);
+}
+
+.button-section {
+    padding: 20px 30px;
+    margin-top: 50px;
+}
+
+.button-footer {
+    padding: 20px 0;
 }
 
 .second-button {
@@ -79,6 +159,7 @@ h1 {
 
 .content-section {
     margin-top: 70px;
+    margin-bottom: 30px;
 }
 
 .abouttop {
@@ -119,7 +200,6 @@ h1 {
     font-style: italic;
 }
 
-
 .navbar-brand {
     font-family: var(--accent-font);
     font-weight: bold;
@@ -131,37 +211,28 @@ h1 {
     max-height: 40px;
 }
 
-nav {
-    padding: 10px 0;
-    background-color: var(--default-color);
-    font-size: 15px;
-}
-
-nav ul {
-    padding: 0;
-    margin: 0;
-}
-
-nav li {
-    display: inline;
-    list-style: none;
-    line-height: 42px;
-    margin-left: 15px;
-}
-
-nav a {
-    text-decoration: none;
-    color: #272142;
-    transition: all 100ms ease-in-out;
-}
-
-nav a:hover {
-    color: var(--branding-color);
-} 
-
-nav li a.active {
-    color: var(--branding-color);
+.inquiry h2 {
+    font-family: var(--accent-font);
     font-weight: bold;
+    text-align: center;
+}
+
+.inquiry p {
+    margin-bottom: 0;
+}
+
+.inquiry {
+    background-color: var(--head-foot-color);
+    border-radius: 7px;
+    padding: 30px;
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+
+.inquiry .hero-button:hover {
+    background-color: var(--branding-color);
+    border: solid 1px var(--branding-color);
+    color: #212529;
 }
 
 @media (max-width: 576px) {
@@ -185,5 +256,14 @@ nav li a.active {
     .contacttop {
         margin-top: 100px;
         margin-bottom: 50px;
+    }
+
+    .inquiry {
+        margin: 0 20px 30px 20px;
+    }
+
+    .inquiry .hero-button {
+        padding: 20px 10px;
+        font-size: 10px;
     }
 }
