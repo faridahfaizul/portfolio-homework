@@ -8,7 +8,8 @@
 
 body {
     font-family: var(--main-font);
-    background-color: var(--default-color);margin-bottom: 30px;
+    background-color: var(--default-color);
+    margin-bottom: 30px;
 }
 
 h1 {
@@ -84,16 +85,6 @@ h1 {
     font-size: 25px;
 }
 
-@media (max-width: 576px) {
-    .hero-section {
-        margin: 100px 20px;
-    }
-
-    .content-section {
-        margin: 100px 20px;
-    }
-}
-
 .content-section {
     margin-top: 70px;
 }
@@ -109,6 +100,7 @@ h1 {
 
 .worktop {
     margin: 120px 0 50px 300px;
+    text-align: end;
 }
 
 .work p {
@@ -124,9 +116,29 @@ h1 {
 }
 
 .contacttop {
-    margin: 120px 0 50px 0;
+    margin-top: 120px;
+    margin-bottom: 50px;
 }
 
 .contact p {
     font-style: italic;
+}
+
+@media (max-width: 576px) {
+    .hero-section {
+        margin: 100px 20px 30px 20px;
+    }
+
+    .content-section {
+        margin: 100px 20px 30px 20px;
+    }
+
+    .about {
+        margin-top: -48px;
+    }
+
+    .worktop {
+        margin: 100px 20px 30px 20px;
+        text-align: center;
+    }
 }
