@@ -17,14 +17,6 @@ h1 {
     font-weight: bold;
 }
 
-.navbar-brand {
-    font-family: var(--accent-font);
-    font-weight: bold;
-    background: url("../image/logo.png") no-repeat;
-    padding-left: 45px;
-    background-position: left center;
-}
-
 .hero-section {
     margin-top: 160px;
 }
@@ -122,6 +114,52 @@ h1 {
 
 .contact p {
     font-style: italic;
+}
+
+
+.navbar-brand {
+    font-family: var(--accent-font);
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 42px;
+    margin-left: -10px;
+}
+
+.logo {
+    max-height: 40px;
+}
+
+nav {
+    padding: 10px 0;
+    background-color: var(--default-color);
+    font-size: 15px;
+}
+
+nav ul {
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    display: inline;
+    list-style: none;
+    line-height: 42px;
+    margin-left: 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #272142;
+    transition: all 100ms ease-in-out;
+}
+
+nav a:hover {
+    color: var(--branding-color);
+} 
+
+nav li a.active {
+    color: var(--branding-color);
+    font-weight: bold;
 }
 
 @media (max-width: 576px) {
