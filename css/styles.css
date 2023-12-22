@@ -51,10 +51,6 @@ nav li a.active {
     font-weight: bold;
 }
 
-footer .link-email{
-    font-size: 18px;
-}
-
 footer a {
     color: var(--branding-color);
     text-decoration: none;
@@ -286,6 +282,8 @@ form .hero-button {
     .inquiry .hero-button {
         padding: 20px 10px;
         font-size: 10px;
+        display: block;
+        margin: 0;
     }
 
     .email-contact {
